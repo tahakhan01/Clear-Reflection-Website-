@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflections | Premium Mirror Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">CLEAR REFLECTIONS</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="MirrorCategories.html" class="nav-link">Mirror Categories</a></li>
+                <li><a href="OurCompletedProjects.html" class="nav-link">Our Projects</a></li>
+                <li><a href="Shop.html" class="nav-link">Shop Location</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1>See Yourself in Perfection</h1>
+            <p>Experience the art of clarity with our handcrafted luxury mirrors, designed to elevate every space.</p>
+            <a href="#shop" class="btn">Explore Collection</a>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-grid reveal">
+                <div class="about-image">
+                    <img src="images for main page/Defining Clarity & Elegance.png" alt="Luxury Interior">
+                </div>
+                <div class="about-text">
+                    <h2>Defining Clarity & Elegance</h2>
+                    <p>Clear Reflections is the premier destination for high-end mirror solutions. We specialize in
+                        curating mirrors that combine artisanal craftsmanship with modern functionality.</p>
+                    <br>
+                    <p>Every mirror in our showroom is selected for its ability to capture light perfectly and enhance
+                        the spatial dynamics of your home.</p>
+                </div>
+            </div>
+            <div class="text-center reveal" style="margin-top:50px;">
+                <h3 style="font-size: 1.8rem;">Our Signature Features</h3>
+            </div>
+            <div class="features-grid reveal">
+                <div class="feature-card">
+                    <i class="fas fa-gem"></i>
+                    <h4>Premium Quality</h4>
+                    <p>High-grade silver glass and durable frames guaranteed for life.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Secure Delivery</h4>
+                    <p>White-glove packaging ensuring your mirror arrives flawless.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tools"></i>
+                    <h4>Customization</h4>
+                    <p>Bespoke sizing and frame finishes to match your interior.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>Expert Consultation</h4>
+                    <p>Professional advice on lighting and placement for optimal effect.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Fast Turnaround</h4>
+                    <p>Quick production timelines so your custom mirror is crafted and delivered without unnecessary
+                        delays.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-boxes-stacked"></i>
+                    <h4>Bulk Order Benefits</h4>
+                    <p>Special pricing and priority handling for large quantity and commercial mirror orders.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="shop" class="section-padding" style="background-color: var(--color-section-alt);">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title">Exclusive Mirror Catalog</h2>
+            </div>
+
+            <div class="filter-container reveal">
+                <div class="filter-group">
+                    <span class="filter-title">Filter by Type</span>
+                    <div class="filter-options-wrapper" id="type-filters">
+                        <button class="filter-btn active" data-filter="all" data-group="type">All Collections</button>
+                        <button class="filter-btn" data-filter="drawing" data-group="type">Grand Living Mirrors</button>
+                        <button class="filter-btn" data-filter="bathroom" data-group="type">Signature Bath
+                            Mirrors</button>
+                        <button class="filter-btn" data-filter="dressing" data-group="type">Dressing & Vanity
+                            Mirrors</button>
+                        <button class="filter-btn" data-filter="bedroom" data-group="type">Luxury Bedroom
+                            Mirrors</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-title">Filter by Material</span>
+                    <div class="filter-options-wrapper" id="material-filters">
+                        <button class="filter-btn active" data-filter="all" data-group="material">All</button>
+                        <button class="filter-btn" data-filter="wooden" data-group="material">Wood Frame
+                            Mirrors</button>
+                        <button class="filter-btn" data-filter="acrylic" data-group="material">Acrylic Frame
+                            Mirrors</button>
+                        <button class="filter-btn" data-filter="metal" data-group="material">Metal Frame
+                            Mirrors</button>
+                        <button class="filter-btn" data-filter="led" data-group="material">LED Illuminated
+                            Mirrors</button>
+                        <button class="filter-btn" data-filter="bluetooth" data-group="material">Smart Bluetooth
+                            Mirrors</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">CLEAR REFLECTIONS</div>
+            <div class="footer-links">
+                <a href="home.html">Home</a>
+                <a href="mirrorcategories.html">Categories</a>
+                <a href="OurCompletedProjects.html">Our Projects</a>
+                <a href="shop.html">Shop Location</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2023 Clear Reflections. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Action Successful!</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Clear Reflections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">CLEAR REFLECTIONS</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="MirrorCategories.html" class="nav-link">Mirror Categories</a></li>
+                <li><a href="OurCompletedProjects.html" class="nav-link">Our Projects</a></li>
+                <li><a href="Shop.html" class="nav-link">Shop Location</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: 60px;">
+                <span class="section-subtitle">We'd Love to Hear From You</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p style="max-width: 600px; margin: 0 auto; color: var(--color-text-secondary);">Whether you're looking
+                    for a custom masterpiece or have a question about shipping, our team is here to assist you.</p>
+            </div>
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 30px; font-size: 2rem;">Contact Information</h2>
+                    <p style="margin-bottom: 30px; font-size: 1.05rem;">Fill out the form and our team will get back to
+                        you within 24 hours. You can also reach us directly via phone or visit our showroom.</p>
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--color-accent); margin-bottom: 5px;">Phone</h4>
+                        <p><a href="tel:+1234567890" style="font-size: 1.1rem; font-weight: 600;">+1 (234) 567-890</a>
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--color-accent); margin-bottom: 5px;">Email</h4>
+                        <p><a href="mailto:support@clearreflections.com"
+                                style="font-size: 1.1rem; font-weight: 600;">support@clearreflections.com</a></p>
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--color-accent); margin-bottom: 5px;">Showroom</h4>
+                        <p>123 Reflection Avenue,<br>Design District, NY 10012</p><a href="location.html"
+                            class="btn btn-sm" style="margin-top: 10px;">Get Directions</a>
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <h4 style="margin-bottom: 15px;">Follow Us</h4>
+                        <div style="display: flex; gap: 15px;"><a href="#" style="font-size: 1.5rem;"><i
+                                    class="fab fa-instagram"></i></a><a href="#" style="font-size: 1.5rem;"><i
+                                    class="fab fa-facebook-f"></i></a><a href="#" style="font-size: 1.5rem;"><i
+                                    class="fab fa-pinterest-p"></i></a></div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); showToast();">
+                        <div class="form-group"><label
+                                style="display: block; margin-bottom: 8px; font-weight: 500;">Full Name</label><input
+                                type="text" class="form-control" placeholder="John Doe" required></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group"><label
+                                    style="display: block; margin-bottom: 8px; font-weight: 500;">Phone</label><input
+                                    type="tel" class="form-control" placeholder="+1 (234) 567-890" required></div>
+                            <div class="form-group"><label
+                                    style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label><input
+                                    type="email" class="form-control" placeholder="john@example.com" required></div>
+                        </div>
+                        <div class="form-group"><label style="display: block; margin-bottom: 8px; font-weight: 500;">How
+                                can we help?</label><select class="form-control">
+                                <option>General Inquiry</option>
+                                <option>Custom Design / Sizing</option>
+                                <option>Order Status</option>
+                                <option>Wholesale / Bulk Orders</option>
+                                <option>Book Showroom Visit</option>
+                            </select></div>
+                        <div class="form-group"><label
+                                style="display: block; margin-bottom: 8px; font-weight: 500;">Message</label><textarea
+                                class="form-control" rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">CLEAR REFLECTIONS</div>
+            <div class="footer-links">
+                <a href="home.html">Home</a>
+                <a href="mirrorcategories.html">Categories</a>
+                <a href="OurCompletedProjects.html">Our Projects</a>
+                <a href="shop.html">Shop Location</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2023 Clear Reflections. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Message Sent Successfully!</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
